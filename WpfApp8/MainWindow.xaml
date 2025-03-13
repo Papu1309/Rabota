@@ -65,6 +65,11 @@
             <Setter Property="FontSize" Value="20"></Setter>
             <Setter Property="Foreground" Value="Blue"></Setter>
         </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="Vardana"></Setter>
+            <Setter Property="FontSize" Value="20"></Setter>  //доделать на текст
+            <Setter Property="Foreground" Value="Red"></Setter>
+        </Style>
     </Window.Resources>
         
 </Window>
