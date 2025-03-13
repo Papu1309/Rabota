@@ -1,0 +1,70 @@
+﻿<Window x:Class="WpfApp8.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp8"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+   
+        <StackPanel>
+         <TabControl x:Name="tabControl">
+            <TabItem >
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="3" >Изображение</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel>
+                        <Image Source="foto/fotoo.jpg" Width="300" Height="320"></Image>
+                        <TextBlock HorizontalAlignment="Center"><Run Text="Капуста"/></TextBlock>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+            <TabItem>
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="5" >Текст</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel>
+                        <ScrollViewer>
+                            <TextBox x:Name="txbText" Text="text/text.docx" Width="350" Height="350" >
+                            
+                            </TextBox>
+                        </ScrollViewer>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+            <TabItem>
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="5">Список</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel>
+                        <ListBox x:Name="lstSpisok">
+                            
+                        </ListBox>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+         </TabControl>
+        </StackPanel>
+    <Window.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="Vardana"></Setter>
+            <Setter Property="FontSize" Value="20"></Setter>
+            <Setter Property="Foreground" Value="Red"></Setter>
+        </Style>
+        <Style TargetType="ListBox">
+            <Setter Property="FontFamily" Value="Vardana"></Setter>
+            <Setter Property="FontSize" Value="20"></Setter>
+            <Setter Property="Foreground" Value="Blue"></Setter>
+        </Style>
+    </Window.Resources>
+        
+</Window>
