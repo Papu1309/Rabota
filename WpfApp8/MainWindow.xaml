@@ -30,9 +30,9 @@
                 </TabItem.Header>
                 <TabItem.Content>
                     <StackPanel>
-                        <ScrollViewer>
-                            <TextBox x:Name="txbText" Text="text/text.docx" Width="350" Height="350" >
-                            
+                        <ScrollViewer HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Visible" Width="350" Height="350" >
+                            <TextBox x:Name="txbText" Text="text/File.docx" Width="350" Height="350" >
+                               
                             </TextBox>
                         </ScrollViewer>
                     </StackPanel>
@@ -46,9 +46,9 @@
                 </TabItem.Header>
                 <TabItem.Content>
                     <StackPanel>
-                        <ListBox x:Name="lstSpisok">
+                            <ListBox x:Name="lstSpisok">
                             
-                        </ListBox>
+                            </ListBox>
                     </StackPanel>
                 </TabItem.Content>
             </TabItem>
@@ -65,11 +65,12 @@
             <Setter Property="FontSize" Value="20"></Setter>
             <Setter Property="Foreground" Value="Blue"></Setter>
         </Style>
-        <Style TargetType="TextBlock">
+        <Style TargetType="TextBox">
             <Setter Property="FontFamily" Value="Vardana"></Setter>
-            <Setter Property="FontSize" Value="20"></Setter>  //доделать на текст
-            <Setter Property="Foreground" Value="Red"></Setter>
+            <Setter Property="FontSize" Value="20"></Setter>
+            <Setter Property="Foreground" Value="Green"></Setter>
         </Style>
+
     </Window.Resources>
         
 </Window>

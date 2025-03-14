@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -30,7 +31,12 @@ namespace WpfApp8
             lstSpisok.Items.Add("Пятница");
             lstSpisok.Items.Add("Суббота");
             lstSpisok.Items.Add("Воскресенье");
-
+            LoadTextFromFile("C:\\Users\\Ильмир\\Desktop\\File3.txt");
+        }
+        private void LoadTextFromFile(string filePath)
+        {
+          txbText.Text = File.ReadAllText(filePath);
+          
         }
     }
 }

@@ -90,12 +90,13 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="text\text.docx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="text\File3.txt" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Foto\fotoo.jpg" />
   </ItemGroup>
